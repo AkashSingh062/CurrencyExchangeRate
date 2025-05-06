@@ -7,7 +7,6 @@ const updateExchangeRate = async () => {
   if (amtVal <= 0) {
     amount.value = "1";
     amtVal = 1;
-    console.log("object")
   }
   const url = `https://api.exchangerate-api.com/v4/latest/${dropdowns[0].value}`;
 
