@@ -147,4 +147,54 @@ button:focus{
     transform: scale(1.02);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #000;
+}/* Existing styles remain unchanged */
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p, .msg {
+        font-size: 1.2rem;
+    }
+    .selectContainer {
+        flex-direction: column;
+    }
+    .selectContainer select {
+        width: 100%;
+        margin: 10px 0;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p, .msg {
+        font-size: 1rem;
+    }
+    input, button {
+        height: 35px;
+        font-size: 1rem;
+    }
+    img {
+        width: 35px;
+        height: 35px;
+    }
 }
